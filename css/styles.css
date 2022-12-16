@@ -59,21 +59,21 @@ body{
 .about-me{
     text-align: justify;
 }
+.Frontal-top{
+    margin-left: 1em;
+    margin-right: 0em;
+    margin-top: 2em;
+}
 
 .Frontal-down{
     margin-left: 3em;
     margin-right: 3em;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 3em;
-    align-items: center;
-    justify-content: center;
-}
-.Frontal-top{
-    margin-left: 1em;
-    margin-right: 0em;
-
+    grid-template-rows: repeat(2fr);
+    grid-gap: 1em;
+    align-items: stretch;
+    /*justify-content: center; */
 }
 
 .home__nav{
@@ -91,11 +91,23 @@ body{
 }
 
 
-.main-proyectos{
+.Proyectos{
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows: (1fr);
-    grid-gap: 3em;
-    align-items: center;
-    justify-content: center;
+    
+} 
+
+.imgScroll{
+    filter: invert(.5);
+    max-height: 5%;
+    max-width: 5%;
+}
+.proyectosTitle{
+    font-size: 10rem; 
+    letter-spacing: 1rem;
+    color:#777;
+    font-family: 'Open-Sauce-One';
+    display: flex;
+    flex-direction: row;
 }
